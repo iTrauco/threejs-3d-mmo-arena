@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>DC3D Battletank Arena</title>
+    <!--title>iTrauco: DC Capstone MMO-DDD Arena</title-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property="og:title" content="Paiza Battle Ground - Simple 3D online multiplayer game using JavaScript and Node.js!" />
+    <!-- meta property="og:title" content="DDD Battletank Arena" /-->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcade.trau.co" />
+    <meta property="og:image" content="https://github.com/itrauco/aquino3d/blob/master/demo/digitalcrafts-main.png" />
+    <meta property="og:site_name" content="Handcoded by Christopher Lee of Nerdy Pug Studios w/ Three.js and Node. " />
+    <!--meta property="og:site_name" content="DDD Battletank MMO Arena" /-->
+    <meta property="og:description" content="This game is cool AF!" />
+    <!--meta property="og:description" content="iTrauco MMO-DDD /-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/static/three.js"></script>
+  </head>
+  <body style="display: flex; flex-direction: column; width: 100%; height: 100%; margin: 0;">
+    <div>
+        Paiza Battle Ground (<a href="/static/2d.html">2D</a> | <a href="/">3D</a>) <a href="https://github.com/itrauco/mmo-ddd" target=_blank>source code</a>
+        <div style="float: right;">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = '';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-share-button" data-href="https://arcade.trau.co" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="" class="fb-xfbml-parse-ignore">Test</a></div>
+        </div>
+        <div><a href="https://arcade.trau.co" target=_blank>Play 3D MMO Now!</a></div>
+    </div> 
+    <div style="flex: 1 1; position: relative; overflow:hidden;">
+        <div id="start-screen" style="width:100%; height:100%; display: flex; align-items: center; position:absolute; z-index:10;">
+            <div style="text-align: center; width: 100%; font-size: xx-large;">
+                <input type="text" name="nickname" id="nickname" placeholder="Your nickname" autofocus><br/><br/>
+                <button style="font-size: xx-large;" id="start-button">Start</button>
+            </div>
+        </div>
+        <canvas id="canvas-2d" width="1000" height="1000" style="position: absolute; width: 100%; height: 100%; z-index:2;object-fit: contain;"></canvas>
+        <canvas id="canvas-3d" width="1000" height="1000" style="position: absolute; width: 100%; height: 100%; z-index:1;object-fit: contain;"></canvas>
+    </div>
+    <img id="player-image" src="/static/dc-logo.png" style="display: none;">
+  </body>
+  <script src="/static/game-3d.js"></script>
+</html>
