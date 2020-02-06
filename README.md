@@ -1,11 +1,12 @@
 # DC3D MMO ARENA
 
-# Play game
+This game was was built as a prototype for a 3D arcade game for inclusion in my [DC Capstone](https://connect-ddd.herokuapp.com) but was shelved; I am using it to test a workflow... 
 
-https://arcade.trau.co
+It is not deployed, but can be downlownded locally and played using the following instructions.
 
-# How to create:
-[Built with Three.js and Node.js!](https://arcade.trau.co)
+<br>
+<img src="https://github.com/iTrauco/threejs-3d-mmo-arena/blob/master/static/gifs/2020-02-06%2011.10.10.gif"></a>
+</br>
 
 # How to start
 
@@ -20,4 +21,6 @@ or
 $ npm install
 $ nodemon server.js
 ```
+
+Open your browser to `localhost:3001`
 
